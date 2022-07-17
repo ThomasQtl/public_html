@@ -18,8 +18,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Accueil </a>
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Accueil </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="AccueilProjet.html">Accueil Projet</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="XFenetre.html">XFenétré</a>
@@ -36,7 +39,7 @@
         <li class="nav-item">
           <a class="nav-link" href="ChefOeuvre.html">Chef d'oeuvre</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="ProjetFinal.html">Projet Final</a>
         </li>
         <li class="nav-item">
@@ -93,7 +96,8 @@
         <strong class="d-inline-block mb-2 text-success"> Jeu implémenté
         </strong>
         <p class="card-text mb-auto">
-          Le fond a été fait a l'aide d'un sprite répété sur tout l'écran et les lignes de touches/buts on été fait avec des SDLRect pour simplifier les calculs lors de la création du terrain.<br />
+          Le fond a été fait a l'aide d'un sprite répété sur tout l'écran et les lignes de touches/buts on été fait avec
+          des SDLRect pour simplifier les calculs lors de la création du terrain.<br />
           Un timeur a été implanté pour limiter le temps de jeu.<br />
           La gestion du score est faite.<br />
           Un écran de fin s'affiche et indique qui a gagné ou indique "Egalité" si tel est le cas.<br />
@@ -129,7 +133,7 @@
           L'IA a été implanté. Il y a deux IA qui jouent l'une contre l'autre après un entraînement basé sur une QTable
           définie de sorte à l'aider un peu à agir comme on veut. <br />
           Aujourd'hui, c'était beaucoup de déboggage.<br />
-          L'objectif de demain est d'entraîner l'IA à partir d'une QTable non forcée. 
+          L'objectif de demain est d'entraîner l'IA à partir d'une QTable non forcée.
         </p>
       </div>
       <img class="card-img-right flex-auto d-none d-md-block" src="resources/projet_final_jeu_J3.gif" width="716"
@@ -166,14 +170,17 @@
         <strong class="d-inline-block mb-2 text-success"> Apprentissage à partir d'une matrice préremplie
         </strong>
         <p class="card-text mb-auto">
-          Voici une matrice préremplie à la main permettant d'avoir un comportement spécial (ici le joueur suit la balle et tire quand il est proche d'elle).<br />
-          On peut par la suite donner cette matrice à la fonction d'apprentissage afin d'affiner les paramètres de la matrice et d'obtenir un comportement plus propre.<br>
-          Par rapport à une matrice vide au départ, cette méthode permet d'obtenir un résultat cohérent( dans cet exemple, le joueur ne peut pas tirer vers le but quand il est situé entre les cages et la balle)
+          Voici une matrice préremplie à la main permettant d'avoir un comportement spécial (ici le joueur suit la balle
+          et tire quand il est proche d'elle).<br />
+          On peut par la suite donner cette matrice à la fonction d'apprentissage afin d'affiner les paramètres de la
+          matrice et d'obtenir un comportement plus propre.<br>
+          Par rapport à une matrice vide au départ, cette méthode permet d'obtenir un résultat cohérent( dans cet
+          exemple, le joueur ne peut pas tirer vers le but quand il est situé entre les cages et la balle)
         </p>
 
       </div>
-      <img class="card-img-right flex-auto d-none d-md-block" src="resources/projet_final_matrice_main.png" width="1400"
-        >
+      <img class="card-img-right flex-auto d-none d-md-block" src="resources/projet_final_matrice_main.png"
+        width="1400">
     </div>
 
     <div class="card flex-md-row mb-4 box-shadow h-md-250">
