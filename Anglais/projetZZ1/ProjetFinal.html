@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <title>Final project</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <a class="navbar-brand" href="#">ZZ1 Project</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../../index.html">Welcome</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="AccueilProjet.html">Welcome Project</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="XFenetre.html">XWindows</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Serpents.html">Pavement of Snakes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="JeuDeLaVie.html">Game of Life</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Sprites.html">Animated Sprites</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ChefOeuvre.html">Masterpiece</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="ProjetFinal.html">Final project</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/ThomasQtl/projet-isima-ZZ1-Juin-2022" target="_blank">Repository
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active" style="margin-right: 20px">
+          <a href="ProjetFinal.html"><img src="../../ressources/drapeaux/drapeauAnglais.png" width=50 height=30 /></a>
+        </li>
+        <li class="nav-item" style="margin-right: 20px">
+          <a href="../../Francais/projetZZ1/ProjetFinal.html"><img src="../../ressources/drapeaux/drapeauFrancais.png"
+              width=50 height=30 /></a>
+        </li>
+        <li class="nav-item" style="margin-right: 20px">
+          <a href="../../Allemand/projetZZ1/ProjetFinal.html"><img src="../../ressources/drapeaux/drapeauAllemand.png"
+              width=50 height=30 /></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>
+      Day 1
+    </h1>
+
+
+    <div class="card flex-md-row mb-4 box-shadow h-md-250">
+      <div class="card-body d-flex flex-column align-items-start">
+        <strong class="d-inline-block mb-2 text-success"> Basic game
+        </strong>
+        <p class="card-text mb-auto">
+          The objective of the game is to face two AI against each other on a small football.<br />
+          Currently, collisions with the ball have been made.<br />
+          The ball goes in the direction that depends on the position of the player at the moment of impact.<br />
+          The rebounds on the edges have been done.<br />
+          At the AI level, the Q-Table is done, the rewards table as well as most of the functions but they have not yet
+          been tested.
+        </p>
+      </div>
+      <img class="card-img-right flex-auto d-none d-md-block" src="../../ressources/projetZZ1/projet_final_J1.gif"
+        width="716" height="352">
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>
+      Day 2
+    </h1>
+
+    <div class="card flex-md-row mb-4 box-shadow h-md-250">
+      <div class="card-body d-flex flex-column align-items-start">
+        <strong class="d-inline-block mb-2 text-success"> Start screen
+        </strong>
+        <p class="card-text mb-auto">
+          The menu to launch the game has been carried out. <br />
+          Just press the space bar to start the game.
+        </p>
+      </div>
+      <img class="card-img-right flex-auto d-none d-md-block" src="../../ressources/projetZZ1/projet_final_ecranDeb.gif"
+        width="716" height="352">
+    </div>
+
+    <div class="card flex-md-row mb-4 box-shadow h-md-250">
+      <div class="card-body d-flex flex-column align-items-start">
+        <strong class="d-inline-block mb-2 text-success"> Game implemented
+        </strong>
+        <p class="card-text mb-auto">
+          The background was made using a sprite repeated all over the screen and the lines of touches/goals were made
+          with SDLRect to simplify the calculations when creating the pitch.<br />
+          A timer has been implemented to limit playing time.<br />
+          Score management is done.<br />
+          An end screen will appear indicating who won or indicating "Egalité" if so.<br />
+          AI is still being implemented.
+        </p>
+      </div>
+      <img class="card-img-right flex-auto d-none d-md-block" src="../../ressources/projetZZ1/projet_final_jeu_J2.gif"
+        width="716" height="352">
+    </div>
+
+    <div class="card flex-md-row mb-4 box-shadow h-md-250">
+      <div class="card-body d-flex flex-column align-items-start">
+        <strong class="d-inline-block mb-2 text-success"> Choice of states
+        </strong>
+        <p class="card-text mb-auto">
+          The choice of states and actions.
+        </p>
+      </div>
+      <img class="card-img-right flex-auto d-none d-md-block" src="../../ressources/projetZZ1/etats.png" width="653"
+        height="571">
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>
+      Day 3
+    </h1>
+
+    <div class="card flex-md-row mb-4 box-shadow h-md-250">
+      <div class="card-body d-flex flex-column align-items-start">
+        <strong class="d-inline-block mb-2 text-success"> AI implemented
+        </strong>
+        <p class="card-text mb-auto">
+          AI has been implemented. There are two AIs that play against each other after training based on a defined
+          QTable to help it act a little as you want. <br />
+          Today was a lot of debugging.<br />
+          Tomorrow's goal is to train the AI from an unforced QTable.
+        </p>
+      </div>
+      <img class="card-img-right flex-auto d-none d-md-block" src="../../ressources/projetZZ1/projet_final_jeu_J3.gif"
+        width="716" height="352">
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>
+      Day 4
+    </h1>
+
+    <div class="card flex-md-row mb-4 box-shadow h-md-250">
+      <div class="card-body d-flex flex-column align-items-start">
+        <strong class="d-inline-block mb-2 text-success"> AI learning
+        </strong>
+        <p class="card-text mb-auto">
+          Here, both AIs learned from an empty QTable. <br />
+          We notice that the two AIs remain fairly fair with each other.<br />
+          This is due to the fact that during learning, the first AI to do an action is random so they have almost
+          equivalent learning.<br />
+          Abdeljalil Zoghlami produced our soundtrack for us (a big thank you to him!):<br />
+        </p>
+        <audio src="../../ressources/projetZZ1/generique.mp3" controls></audio>
+        <audio src="../../ressources/projetZZ1/jeu.mp3" controls></audio>
+
+      </div>
+      <img class="card-img-right flex-auto d-none d-md-block" src="../../ressources/projetZZ1/projet_final_jeu_J4.gif"
+        width="716" height="352">
+    </div>
+
+    <div class="card flex-md-row mb-4 box-shadow h-md-250">
+      <div class="card-body d-flex flex-column align-items-start">
+        <strong class="d-inline-block mb-2 text-success"> Learning from a pre-populated matrix
+        </strong>
+        <p class="card-text mb-auto">
+          Here is a matrix pre-filled by hand allowing to have a special behavior (here the player follows the ball and
+          shoots when he is close to it).<br />
+          We can then give this matrix to the learning function in order to refine the parameters of the matrix and
+          obtain a cleaner behavior.<br>
+          Compared to an empty matrix at the start, this method makes it possible to obtain a coherent result (in this
+          example, the player cannot shoot towards the goal when he is located between the cages and the ball).
+        </p>
+
+      </div>
+      <img class="card-img-right flex-auto d-none d-md-block"
+        src="../../ressources/projetZZ1/projet_final_matrice_main.png" width="1400">
+    </div>
+
+    <div class="card flex-md-row mb-4 box-shadow h-md-250">
+      <div class="card-body d-flex flex-column align-items-start">
+        <strong class="d-inline-block mb-2 text-success"> 2 vs 2
+        </strong>
+        <p class="card-text mb-auto">
+          Here is an example of a game with 4 players. <br />
+          Each player at the QTable of the trained player as before in 1vs1.
+        </p>
+
+      </div>
+      <img class="card-img-right flex-auto d-none d-md-block"
+        src="../../ressources/projetZZ1/projet_final_jeu_J4_4v4.gif" width="716" height="352">
+    </div>
+  </div>
+
+</body>
+
+</html>
