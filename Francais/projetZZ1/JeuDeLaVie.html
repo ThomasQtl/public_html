@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <title>Sprites Animés</title>
+  <title>Jeu de la vie</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="../index.html">Accueil </a>
+          <a class="nav-link" href="../indexFr.html">Accueil </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="AccueilProjet.html">Accueil Projet</a>
@@ -30,10 +30,10 @@
         <li class="nav-item">
           <a class="nav-link" href="Serpents.html">Pavé de Serpents</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="JeuDeLaVie.html">Jeu de la vie</a>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="Sprites.html">Sprites Animés</a>
         </li>
         <li class="nav-item">
@@ -51,49 +51,54 @@
 
   <div class="container">
     <h1>
-      Exercice Sprites Animés
+      Exercice Jeu de la vie
     </h1>
 
 
     <div class="card flex-md-row mb-4 box-shadow h-md-250">
       <div class="card-body d-flex flex-column align-items-start">
-        <strong class="d-inline-block mb-2 text-success"> Antonin DEVIDAL
+        <strong class="d-inline-block mb-2 text-success"> Jeu de base
         </strong>
         <p class="card-text mb-auto">
-          Un petit lapin tueur prêt à tuer tout le monde !
+          Le jeu de la vie selon la règle de Conway's Life (B3/S23). <br \>
+          Il est possible d'accélérer ou ralentir la propagation avec les flèches droite et gauche. <br \>
+          Le mode entre délimité et torique est modifiable directement avec la touche M.<br \>
+          Si on arrive dans un état stable, la console affiche "Etat stable".
         </p>
       </div>
-
-      <img class="card-img-right flex-auto d-none d-md-block" src="resources/Animation_Antonin.gif" width="486"
-        height="297" />
+      <img class="card-img-right flex-auto d-none d-md-block" src="../../ressources/projetZZ1/jeu_de_la_vie_1.gif" width="499"
+        height="399">
 
     </div>
+
     <div class="card flex-md-row mb-4 box-shadow h-md-250">
       <div class="card-body d-flex flex-column align-items-start">
-        <strong class="d-inline-block mb-2 text-success"> Thomas QUENTEL
+        <strong class="d-inline-block mb-2 text-success"> Interaction Utilisateur
         </strong>
         <p class="card-text mb-auto">
-          Mon petit bonhomme heureux dans les vignes alsaciennes en automne !
+          De plus, il est possible de mettre le jeu en pause avec la barre espace, de dessiner son schéma à tout moment
+          (pause ou non) à l'aide de la souris.<br \>
+          Mais aussi sauvegarder une configuration dans un fichier texte avec la touche S et charger une configuration
+          avec la touche C.
         </p>
       </div>
-      <img class="card-img-right flex-auto d-none d-md-block" src="resources/Animation_Thomas.gif" width="499"
-        height="399" />
-
+      <img class="card-img-right flex-auto d-none d-md-block" src="../../ressources/projetZZ1/jeu_de_la_vie_2.gif" width="499"
+        height="399">
 
     </div>
+
     <div class="card flex-md-row mb-4 box-shadow h-md-250">
       <div class="card-body d-flex flex-column align-items-start">
-        <strong class="d-inline-block mb-2 text-success"> Ivan LE TEUFF
+        <strong class="d-inline-block mb-2 text-success"> Autre configuration
         </strong>
         <p class="card-text mb-auto">
-          Un magicien qui court et tape le sol sans aucune raison.<br />
-          Sans doute un truc de magicien.
+          Enfin, il est possible de changer les règles du jeu dans le fichier data.h qui contient
+          simplement deux tableaux de taille 9 contenant les règles de naissance et de survie.<br \>
+          Voici un exemple avec la règle H-trees (B1/S012345678).
         </p>
       </div>
-
-      <img class="card-img-right flex-auto d-none d-md-block" src="resources/Animation_Ivan.gif"
-        data-src="holder.js/200x250?theme=thumb" width="649" height="471" />
-
+      <img class="card-img-right flex-auto d-none d-md-block" src="../../ressources/projetZZ1/jeu_de_la_vie_3.gif" width="499"
+        height="399">
     </div>
   </div>
 
