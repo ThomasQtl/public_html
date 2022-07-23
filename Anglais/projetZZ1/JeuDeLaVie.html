@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <title>Jeu de la vie</title>
+  <title>Game of Life</title>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-    <a class="navbar-brand" href="#">Projet ZZ1</a>
+    <a class="navbar-brand" href="#">ZZ1 Project</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
       aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -19,31 +19,47 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="../../index.html">Accueil </a>
+          <a class="nav-link" href="../../index.html">Welcome</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="AccueilProjet.html">Accueil Projet</a>
+          <a class="nav-link" href="AccueilProjet.html">Welcome Project</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="XFenetre.html">XFenétré</a>
+          <a class="nav-link" href="XFenetre.html">XWindows</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Serpents.html">Pavé de Serpents</a>
+          <a class="nav-link" href="Serpents.html">Pavement of Snakes</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="JeuDeLaVie.html">Jeu de la vie</a>
+          <a class="nav-link" href="JeuDeLaVie.html">Game of Life</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Sprites.html">Sprites Animés</a>
+          <a class="nav-link" href="Sprites.html">Animated Sprites</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="ChefOeuvre.html">Chef d'oeuvre</a>
+          <a class="nav-link" href="ChefOeuvre.html">Masterpiece</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="ProjetFinal.html">Projet Final</a>
+          <a class="nav-link" href="ProjetFinal.html">Final project</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/ThomasQtl/projet-isima-ZZ1-Juin-2022" target="_blank">Dépôt</a>
+          <a class="nav-link" href="https://github.com/ThomasQtl/projet-isima-ZZ1-Juin-2022" target="_blank">Repository
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active" style="margin-right: 20px">
+          <a href="JeuDeLaVie.html"><img src="../../ressources/drapeaux/drapeauAnglais.png" width=50 height=30 /></a>
+        </li>
+        <li class="nav-item" style="margin-right: 20px">
+          <a href="../../Francais/projetZZ1/JeuDeLaVie.html"><img src="../../ressources/drapeaux/drapeauFrancais.png"
+              width=50 height=30 /></a>
+        </li>
+        <li class="nav-item" style="margin-right: 20px">
+          <a href="../../Allemand/projetZZ1/JeuDeLaVie.html"><img src="../../ressources/drapeaux/drapeauAllemand.png"
+              width=50 height=30 /></a>
         </li>
       </ul>
     </div>
@@ -51,54 +67,53 @@
 
   <div class="container">
     <h1>
-      Exercice Jeu de la vie
+      Game of Life
     </h1>
 
 
     <div class="card flex-md-row mb-4 box-shadow h-md-250">
       <div class="card-body d-flex flex-column align-items-start">
-        <strong class="d-inline-block mb-2 text-success"> Jeu de base
+        <strong class="d-inline-block mb-2 text-success"> Basic game
         </strong>
         <p class="card-text mb-auto">
-          Le jeu de la vie selon la règle de Conway's Life (B3/S23). <br \>
-          Il est possible d'accélérer ou ralentir la propagation avec les flèches droite et gauche. <br \>
-          Le mode entre délimité et torique est modifiable directement avec la touche M.<br \>
-          Si on arrive dans un état stable, la console affiche "Etat stable".
+          The Game of Life according to Conway's Life Rule (B3/S23). <br>
+          It is possible to speed up or slow down the spread with the right and left arrows. <br>
+          The mode between delimited and toric can be modified directly with the M key.<br \>
+          If we arrive in a stable state, the console displays "Stable state".
         </p>
       </div>
-      <img class="card-img-right flex-auto d-none d-md-block" src="../../ressources/projetZZ1/jeu_de_la_vie_1.gif" width="499"
-        height="399">
+      <img class="card-img-right flex-auto d-none d-md-block" src="../../ressources/projetZZ1/jeu_de_la_vie_1.gif"
+        width="499" height="399">
 
     </div>
 
     <div class="card flex-md-row mb-4 box-shadow h-md-250">
       <div class="card-body d-flex flex-column align-items-start">
-        <strong class="d-inline-block mb-2 text-success"> Interaction Utilisateur
+        <strong class="d-inline-block mb-2 text-success"> User Interaction
         </strong>
         <p class="card-text mb-auto">
-          De plus, il est possible de mettre le jeu en pause avec la barre espace, de dessiner son schéma à tout moment
-          (pause ou non) à l'aide de la souris.<br \>
-          Mais aussi sauvegarder une configuration dans un fichier texte avec la touche S et charger une configuration
-          avec la touche C.
+          In addition, it is possible to pause the game with the space bar, to draw its diagram at any time (pause or
+          not) using the mouse.<br \>
+          But also save a configuration in a text file with the S key and load a configuration with the C key.
         </p>
       </div>
-      <img class="card-img-right flex-auto d-none d-md-block" src="../../ressources/projetZZ1/jeu_de_la_vie_2.gif" width="499"
-        height="399">
+      <img class="card-img-right flex-auto d-none d-md-block" src="../../ressources/projetZZ1/jeu_de_la_vie_2.gif"
+        width="499" height="399">
 
     </div>
 
     <div class="card flex-md-row mb-4 box-shadow h-md-250">
       <div class="card-body d-flex flex-column align-items-start">
-        <strong class="d-inline-block mb-2 text-success"> Autre configuration
+        <strong class="d-inline-block mb-2 text-success"> Other setup
         </strong>
         <p class="card-text mb-auto">
-          Enfin, il est possible de changer les règles du jeu dans le fichier data.h qui contient
-          simplement deux tableaux de taille 9 contenant les règles de naissance et de survie.<br \>
-          Voici un exemple avec la règle H-trees (B1/S012345678).
+          Finally, it is possible to change the rules of the game in the data.h file which simply contains two tables of
+          size 9 containing the rules of birth and survival.<br \>
+          Here is an example with the H-trees rule (B1/S012345678).
         </p>
       </div>
-      <img class="card-img-right flex-auto d-none d-md-block" src="../../ressources/projetZZ1/jeu_de_la_vie_3.gif" width="499"
-        height="399">
+      <img class="card-img-right flex-auto d-none d-md-block" src="../../ressources/projetZZ1/jeu_de_la_vie_3.gif"
+        width="499" height="399">
     </div>
   </div>
 
