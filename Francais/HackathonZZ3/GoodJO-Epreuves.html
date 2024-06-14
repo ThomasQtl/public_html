@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="light">Jeux Olympiques du Futur</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="good-event-style.css">
+</head>
+<body>
+<header>
+    <h1>Jeux Olympiques</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Épreuves</a></li>
+            <li><a href="GoodJO-Orga.html">Organisation</a></li>
+        </ul>
+    </nav>
+    <a href="index.html" id="buttonToGood">
+        <img src="../../ressources/hackathonZZ3/leaf.png" width="80px">
+    </a>
+</header>
+
+<div class="separator"></div>
+
+<div id="main">
+    <div id="bubble1" class="bubble" data-bg="../../ressources/hackathonZZ3/good-event-bg1.png">
+        <h2>Les sports aquaVR</h2>
+        <p>Les sports aquatiques qui laisseront les poissons et les coraux tranquille !</p>
+    </div>
+    <div id="bubble2" class="bubble" data-bg="../../ressources/hackathonZZ3/good-event-bg2.png">
+        <h2>Les sports de air ballon</h2>
+        <p>Ils ne piétineront plus l’herbe mais fileront sur le terrain comme volant sur des nuages.</p>
+    </div>
+    <div id="bubble3" class="bubble" data-bg="../../ressources/hackathonZZ3/good-event-bg3.png">
+        <h2>Les sports de raquette augmentée</h2>
+        <p>L’inclusivité est une valeur importante chez nous. Venez admirez leurs exploit au tennis et badminton.</p>
+    </div>
+    <div id="bubble4" class="bubble" data-bg="../../ressources/hackathonZZ3/good-event-bg4.png">
+        <h2>Les sports de combat robotisé</h2>
+        <p>Fini les temps où coup et douleur faisait fi dans ces épreuves, les robots sont désormais piloté par nos compétiteurs !.</p>
+    </div>
+    <div id="bubble5" class="bubble" data-bg="../../ressources/hackathonZZ3/good-event-bg5.png">
+        <h2>Athlétisme aérien</h2>
+        <p>Pourquoi utilisez ses pieds et se fatiguer quand on peut profiter de la nature. Observez les courses de parapente, les relais de parachutes et saut d’oiseaux.</p>
+    </div>
+    <div id="bubble6" class="bubble" data-bg="../../ressources/hackathonZZ3/good-event-bg6.png">
+        <h2>Les sports de tir biodégradable</h2>
+        <p>Allions l’utile à l’agréable : les tirs à l’arc et de précision laisseront place à de magnifiques parterre de fleurs.</p>
+    </div>
+    <div id="bubble7" class="bubble" data-bg="../../ressources/hackathonZZ3/good-event-bg7.png">
+        <h2>Les sports de glisse</h2>
+        <p>Profitons de la nature tel que nos aïeux nous ont laissé. Les sports de glisse se dérouleront dans les anciennes carrières françaises.</p>
+    </div>
+</div>
+
+<div id="foot"></div>
+<footer>
+    <p>&copy; 2100 Jeux Olympiques Écologiques. Tous droits réservés à l'équipe IAkathon.</p>
+</footer>
+</body>
+
+<script>
+    const main = document.getElementById('main');
+    document.querySelectorAll('.bubble').forEach(bubble => {
+        bubble.addEventListener('mouseover', function() {
+            const bgImage = this.getAttribute('data-bg');
+            main.style.backgroundImage = `url(${bgImage})`;
+        });
+
+        bubble.addEventListener('mouseout', function() {
+            main.style.backgroundImage = '';
+        });
+    });
+</script>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="light">Jeux Olympiques du Futur</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bad-style.css">
+</head>
+<body>
+<header>
+    <h1>Jeux Olympiques</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Épreuves</a></li>
+            <li class="dark"><a><strike>Organisation</strike></a></li>
+        </ul>
+    </nav>
+        <a href="GoodJO-Epreuves.html" id="buttonToGood">
+            <img class="dark" src="../../ressources/hackathonZZ3/fire.png" width="80px">
+        </a>
+</header>
+
+<div class="container">
+    <div class="bubble" id="bubble3" data-bg="../../ressources/hackathonZZ3/bad-bg1.png">
+        <span class="title">Parkour dans Ville Fantôme</span>
+        <span class="details">
+            Le "Parkour dans Ville Fantôme" est une épreuve palpitante des Jeux Olympiques, se déroulant dans une ville en ruines. Les participants, experts en parkour, sont placés en cercle à la périphérie de la zone de compétition. Au centre de ce cercle, à environ 500 mètres de distance, se trouvent trois drapeaux distincts représentant les 1ère, 2ème et 3ème places.
+        </span>
+    </div>
+    <div class="bubble" id="bubble1" data-bg="../../ressources/hackathonZZ3/bad-bg2.png">
+        <span class="title">Ski sur lave</span>
+        <span class="details">
+            Le Ski sur lave est un sport extrême, qui combine des éléments de ski et de survie. Les athlètes doivent dévaler les pentes de volcans actifs le plus rapidement possible. Les athlètes doivent se servir des coulées de lave pour gagner en vitesse et doubler leur adversaire.
+        </span>
+    </div>
+    <div class="bubble" id="bubble4" data-bg="../../ressources/hackathonZZ3/bad-bg3.png">
+        <span class="title">Course de bateau à voile dans le désert</span>
+        <span class="details">
+            La course de bateau à voile dans le désert est une épreuve unique qui combine la grâce de la voile avec le défi environnemental du désert. Ces voiliers sont équipés de grandes voiles adaptées pour capter même les vents les plus légers. Les compétiteurs doivent naviguer à travers un parcours sinueux délimité par des balises, composé de dunes, de plaines rocailleuses et parfois de zones sablonneuses plus compactes.
+        </span>
+    </div>
+</div>
+
+<div id="foot"></div>
+<footer>
+    <p>&copy; 2100 Jeux Olympiques Écologiques. Tous droits réservés à l'équipe IAkathon.</p>
+</footer>
+</body>
+
+<script>
+    document.querySelectorAll('.bubble').forEach(bubble => {
+        bubble.addEventListener('mouseover', function() {
+            const bgImage = this.getAttribute('data-bg');
+            document.body.style.backgroundImage = `url(${bgImage})`;
+        });
+
+        bubble.addEventListener('mouseout', function() {
+            document.body.style.backgroundImage = '';
+        });
+    });
+</script>
+
+</html>

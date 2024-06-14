@@ -1,0 +1,49 @@
+#foot {
+    height: 90px;
+}
+
+
+img { padding-right: 5px;}
+
+
+#buttonToGood img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Hide the checked checkbox */
+.img-checked {
+    display: none;
+}
+
+/*  Display the checked image when checked */
+.container input:checked ~ .img-checked {
+    display: inline;
+}
+
+/*  Hide the unchecked image when checked */
+.container input:checked ~ .img-unchecked {
+    display: none;
+}
+
+#buttonToGood{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#foot {
+    height: 50px;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    text-align: center;
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    z-index: 20;
+}

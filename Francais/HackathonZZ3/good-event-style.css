@@ -1,0 +1,119 @@
+﻿body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0;
+    transition: background-image 0.25s ease;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+h1, h2 {
+    color: #4CAF50;
+}
+
+h1 {
+    color: white;
+}
+
+
+#main {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: url("../../ressources/hackathonZZ3/good.png") no-repeat;
+    background-size: cover;
+}
+
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, width 0.3s, height 0.3s, z-index 0.3s;
+    cursor: pointer;
+    color: white;
+}
+
+.bubble:hover {
+    width: 300px;
+    height: 300px;
+    z-index: 10;
+}
+
+.bubble h2 {
+    font-size: 0.9em;
+    margin: 0.5em 0;
+    color: #fff;
+}
+
+.bubble p {
+    font-size: 1em;
+    display: none;
+}
+
+.bubble:hover p {
+    display: block;
+}
+
+/* Colors for each bubble */
+#bubble1 { background: #e74c3c; }
+#bubble2 { background: #8e44ad; }
+#bubble3 { background: #3498db; }
+#bubble4 { background: #1abc9c; }
+#bubble5 { background: #f39c12; }
+#bubble6 { background: #d35400; }
+#bubble7 { background: #27ae60; }
+
+/* Positioning the bubbles in a circular pattern */
+#bubble1 { top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(0deg) translate(250px) rotate(0deg); }
+#bubble2 { top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(52deg) translate(250px) rotate(-52deg); }
+#bubble3 { top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(104deg) translate(250px) rotate(-104deg); }
+#bubble4 { top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(156deg) translate(250px) rotate(-156deg); }
+#bubble5 { top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(208deg) translate(250px) rotate(-208deg); }
+#bubble6 { top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(260deg) translate(250px) rotate(-260deg); }
+#bubble7 { top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(312deg) translate(250px) rotate(-312deg); }
+
+.separator {
+    background-color: black;
+    width: 100%;
+    height: 5px;
+}
